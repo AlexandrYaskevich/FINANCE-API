@@ -1,0 +1,10 @@
+
+.navigation{
+    display: flex;
+    margin-left: 200px;
+    gap: 15px;
+}
+
+.active{
+    color: rgb(255, 0, 132);
+}

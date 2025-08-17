@@ -1,0 +1,15 @@
+.headermain{
+    width: 100%;
+    height: 100px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=bfb787244df8c86f7756a6e1b143156ddb88c645-16308086-images-thumbs&n=13");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    list-style: none;
+    display: flex;
+}
+
+.navigation{
+    margin-right: auto;
+    margin-left: auto;
+}
