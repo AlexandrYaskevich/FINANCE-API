@@ -3,7 +3,7 @@ import HeaderMenu from "./HeaderMenu/HeaderMenu";
 
 const Header = () => {
     return (<div className={style.headermain}>
-        <div>Header</div>
+        <h1>FINANCE-APP</h1>
         <HeaderMenu />
     </div>);
 }

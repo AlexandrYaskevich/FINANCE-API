@@ -1,10 +1,15 @@
 
 .navigation{
     display: flex;
-    margin-left: 200px;
+    margin-left: 500px;
     gap: 15px;
+    font-size: 25px;
+    margin-top: 25px;
 }
 
 .active{
-    color: rgb(255, 0, 132);
+    color: rgb(255, 0, 8);
+}
+.normal{
+    color: aqua;
 }

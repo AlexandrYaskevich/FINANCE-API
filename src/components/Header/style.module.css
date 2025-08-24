@@ -7,9 +7,10 @@
     color: white;
     list-style: none;
     display: flex;
+    font-size: 20px;
+    border-radius: 10px;
 }
 
-.navigation{
-    margin-right: auto;
-    margin-left: auto;
+h1{
+        margin-left: 20px;
 }

@@ -6,10 +6,10 @@ const HeaderMenu = () => {
         <div>
         <nav className={style.navigation}>
             <li>
-                <NavLink className={({isActive}) => isActive ? style.active : null} to="">Main</NavLink>
+                <NavLink className={({isActive}) => isActive ? style.active : style.normal} to="">Main</NavLink>
             </li>
             <li>
-                <NavLink className={({isActive}) => isActive ? style.active : null} to="/stocks">Stocks</NavLink>
+                <NavLink className={({isActive}) => isActive ? style.active : style.normal} to="/stocks">Stocks</NavLink>
             </li>
         </nav>
         </div>

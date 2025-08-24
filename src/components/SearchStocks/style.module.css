@@ -1,8 +1,7 @@
 .search {
-    display: flex;
     text-align: center;
     justify-content: center;
-
+    list-style: none;
 }
 input {
     border: 1px solid rgb(255, 255, 255);
@@ -11,4 +10,23 @@ input {
     height: 30px;
     background-color: rgb(252, 216, 216);
 
+}
+.columnfav{
+    display: flex;
+    list-style: none;
+}
+.deletbut {
+    width: 100px;
+    height: 20px;
+    background-color: rgb(246, 114, 77);
+    border-radius: 5px;
+    font-size: 15px;
+}
+.addbutton {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(108, 108, 244);
+    border-radius: 10px;
+    border: 1px solid red;
+    font-size: 15px;
 }
