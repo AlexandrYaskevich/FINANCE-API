@@ -1,19 +1,98 @@
 .content {
-    background-color: rgb(235, 190, 130);
-    width: 100%;
-    height: 800px;
-    color: black;
+  background-color: white;
+  width: 100%;
+  margin-top: 20px;
+  color: black;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px; /* Максимальная ширина */
+  margin: 0 auto; /* Центрирование */
+  border: 2px solid #ccc; /* рамка */
+  border-radius: 8px; /* скругление углов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* тень */
+  overflow: hidden; /* скрыть выступающие части */
 }
-.head{
-    font-style: inherit;
+.head {
+    margin-left: auto;
+    margin-right: auto;
+  font-size: 35px;
+  font-weight: normal;
+  cursor: pointer;
+  color: #141436; /* черный цвет текста */
+  text-shadow: -1px -1px #fff, -2px -2px #fff, -1px 1px #fff, -2px 2px #fff,
+    1px 1px #fff, 2px 2px #fff, 1px -1px #fff, 2px -2px #fff, -3px -3px 2px #bbb,
+    -3px 3px 2px #bbb, 3px 3px 2px #bbb, 3px -3px 2px #bbb;
+
+  padding: 20px;
+
+  /* Добавляем границу с тенью */
+  border: 2px solid #9292cf; /* темная рамка */
+  border-radius: 10px;
+  /* Тень для рамки */
+  box-shadow: inset 0 0 10px rgba(51, 50, 50, 0.3),
+    /* внутренняя тень */ 4px 4px 15px rgba(0, 0, 0, 0.4); /* внешняя тень */
+
+  /* Плавный переход для всех свойств */
+  transition: all 0.5s ease;
 }
-.button{
-    height: 40px;
-    width: 100px;
-    border-radius: 10px;
-    color: blueviolet;
-    background-color: aqua;
+
+/* Эффект при наведении */
+.head:hover {
+  color: rgb(36, 13, 15); /* меняется цвет текста */
+
+  /* Можно добавить эффект увеличения или тени при наведении */
+  transform: scale(1.05);
+}
+
+.button {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  color: #131000;
+  background-color: #92bae2;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid #0d1402;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 2px 3px 8px;
+}
+.button:hover,
+.bchange:hover {
+  background-color: #91e7bc;
 }
 .video {
- padding: 30px 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: block;
+}
+.listblock {
+  border-top: 1px solid red;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bchange {
+  height: 25px;
+  width: 150px;
+  border-radius: 10px;
+  color: #131000;
+  background-color: #92bae2;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #0d1402;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 2px 3px 8px;
+}
+
+.vidblock {
+    padding: 15px;
 }

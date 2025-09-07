@@ -57,9 +57,9 @@ const SearchStocks = () => {
         placeholder="Введите название акции..."
         onChange={(e) => setValue(e.target.value)}
       />
-      <ul>
+      <ul className={style.listsearch}>
         {first15Stocks.map((stock) => (
-          <li key={stock.figi} onClick={() => addFavorite(stock)}>
+          <li className={style.stockInList} key={stock.figi} onClick={() => addFavorite(stock)}>
             {stock.symbol}
           </li>
         ))}
@@ -70,19 +70,19 @@ const SearchStocks = () => {
         <h1>You cheked next stocks-</h1>
         {favstocks.map((st) => (
           <div className={style.columnfav}>
-            <li key={st.figi}>{st.symbol}</li>
-            <p>{st.description}</p>
+            <li className={style.nameStock} key={st.figi}>{st.symbol}</li>
+            <p className={style.aboutStock}>{st.description}</p>
             <button className={style.deletbut} onClick={() => DeleteFav(st.figi)}>delete</button>
           </div>
         ))}
       </ul>
       <button className={style.addbutton} onClick={sendFavStocks}>AddFavourite</button>
       </div>
-      <div>
+      <div className={style.addserver}>
         <h1>This stocks add to sever</h1>
         {savstock.map((s) => (
           <div>
-            <li key={s.figi}>{s.symbol}</li>
+            <li className={style.stockinserver} key={s.figi}>{s.symbol}</li>
           </div>
         ))}
       </div>
